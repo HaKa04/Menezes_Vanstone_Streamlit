@@ -10,7 +10,7 @@ import numpy as np
 def main():
 
     # title
-    st.set_page_config(page_title="Menezes Vanstone Cryptosystem on the Field F(p^n)", layout="wide")
+    st.set_page_config(page_title="TEST_NEW_FILE_Menezes Vanstone Cryptosystem on the Field F(p^n)", layout="wide")
     
     # Side title in the main field
     st.title('Example to test Menezes Vanstone kryptosystem')
