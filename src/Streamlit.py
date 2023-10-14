@@ -54,7 +54,7 @@ def main():
             with first_layer:
                 st.subheader("Setup ")
                 st.write("""Elliptische Kurve mit Gleichung und Parametern wie in der linken Seitenleiste. Punkt G auf dieser Kurve ist ebenfalls gegeben. 
-                         Wir konstruieren das endliche Feld F(131^8). Das irreduzible Polynom wird für die Berechnung verwendet.  """)
+                         Wir konstruieren das endliche Körper F(131^8). Das irreduzible Polynom wird für die Berechnung verwendet.  """)
                 st.write("-----")
                 st.latex(r'''\text{Empfänger generiert privaten Schlüssel } k_A \text{ mit einer ganzen Zahl zwischen 0 und } q = 131^8 = 86’730’203’469’006’241''')
                 st.latex(r'''\text{Empfänger berechnet öffentlichen Schlüssel Punkt } Q_A = P \cdot k_A \text{ |(Punktaddition)}''')
@@ -142,7 +142,7 @@ def main():
                     st.write(f"m_2 = " + str(m2) )
                     st.write("-----")
                     st.write(f'''Generiere privaten Schlüssel **z_{i}** = **{verschlüsselt_mit_schlüsseln[1][i]}**''')
-                    st.write(f"Berechne **R** = P * z_{i} = {pythonpunkt} * {verschlüsselt_mit_schlüsseln[1][i]} = **{verschlüsselt[i][0]}**")
+                    st.write(f"Berechne **R** = P * z_{i} = {startpunkt} * {verschlüsselt_mit_schlüsseln[1][i]} = **{verschlüsselt[i][0]}**")
                     s = öffentlicher_schluessel_Qa * verschlüsselt_mit_schlüsseln[1][i]
                     st.write(f"Berechne **(s_1, s_2)** = Q_A * z_{i} = {öffentlicher_schluessel_Qa} * {verschlüsselt_mit_schlüsseln[1][i]} * = **{s}**")
                     st.write(f"Berechne verschlüsselte Nachricht **t_1** = m_1 * s_1 = {m1} * {s.x.value} = **{verschlüsselt[i][1][0].value}** ")
