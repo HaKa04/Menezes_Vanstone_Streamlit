@@ -1,4 +1,4 @@
-# Menezes-Vanstone Verschlüsselung im Körper $F_{q}$
+# Menezes-Vanstone Verschlüsselung in endlichen Körpern
 
 Dies ist eine Implementierung des Menezes-Vanstone-Kryptosystems in Python. Das System erlaubt die Ver- und Entschlüsselung von Nachrichten mit Hilfe von elliptischen Kurven im Körper $F_{131^8}$. Die Anwendung verwendet meine eigene Python-Bibliothek, die für Berechnungen mit elliptischen Kurven und dem Körper $F_{131^8}$ entwickelt wurde.
 
