@@ -11,7 +11,7 @@ def main():
     st.set_page_config(page_title="Menezes Vanstone Kryptosystem im Körper F(p^n)", layout="wide")
     
     # Seitentitel im Hauptfeld
-    st.title('Beispiel zur Überprüfung des Menezes Vanstone Kryptosystems')
+    st.title('Beispiel zur Überprüfung des Menezes Vanstone Verschlüsselungssystem')
     Elliptische_Kurve  = st.sidebar.container()
     Kurve = Ascii()
     startpunkt = Kurve.startpoint
@@ -54,7 +54,7 @@ def main():
             with first_layer:
                 st.subheader("Setup ")
                 st.write("""Elliptische Kurve mit Gleichung und Parametern wie in der linken Seitenleiste. Punkt G auf dieser Kurve ist ebenfalls gegeben. 
-                         Wir konstruieren das endliche Körper F(131^8). Das irreduzible Polynom wird für die Berechnung verwendet.  """)
+                         Wir konstruieren der endliche Körper F(131^8). Das irreduzible Polynom wird für die Berechnung verwendet.  """)
                 st.write("-----")
                 st.latex(r'''\text{Empfänger generiert privaten Schlüssel } k_A \text{ mit einer ganzen Zahl zwischen 0 und } q = 131^8 = 86’730’203’469’006’241''')
                 st.latex(r'''\text{Empfänger berechnet öffentlichen Schlüssel Punkt } Q_A = P \cdot k_A \text{ |(Punktaddition)}''')
