@@ -18,18 +18,27 @@ Stellen Sie sicher, dass die folgenden Python-Bibliotheken installiert sind:
 Dies wird unten beschrieben.
 
 ### Installation
-
+Linux:
 ```sh
-   pip install requirements.txt
-   ```
+pip install -r src/requirements.txt
+```
+Windows:
+```sh
+pip install -r .src\requirements.txt
+```
 
 
 ### Anwendung ausführen
 
 Um die Anwendung auszuführen, verwenden Sie den folgenden Befehl:
 
-```sh
-streamlit run Streamlit.py
+Linux:
+```shell
+streamlit run src/Streamlit.py
+```
+Windows:
+```shell
+streamlit run .src\Streamlit.py
 ```
 ## Anmerkungen
 
